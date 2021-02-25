@@ -16,7 +16,7 @@ class PagesController < ApplicationController
 
   def double
     session[:number] = 1 if !session[:number]
-    ap session[:number] *= session[:number]
+    session[:number] *= session[:number]
     redirect_to '/'
   end
 
